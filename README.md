@@ -28,4 +28,7 @@ OSLG | Opponent Slugging Percentage
 
 ## Methods
 - There are 2 columns I dropped from dataset before creating the visualizations: 'SeasonRank' and 'PlayoffRank.' These columns contained a lot of missing values because they only ranked the teams in the dataset that made the playoffs. And the ranking had no use to making the prediction of whether or not they make the playoffs, so they were dropped.
--  For modeling the predictions, I also dropped 'OOBP' and 'OSLG' columns. About 66% of the values in those columns were also missing, as that stat had not been calculated prior to 
+-  For modeling, I also dropped 'OOBP' and 'OSLG' columns. About 66% of the values in those columns were also missing, as that stat had not been calculated prior to 1999. I did not want to calculate the mean for all missing values because it would introduce a lot of error into the dataset.
+- I did some feature engineering on the best model to see if it could improve its ability to predict the target. I combined 'OBP' and 'SLG' into 'OPS', which is a widely regarded stat in professional baseball. I also created a run differential column as well to show how many more runs each team scored vs. how many they allowed.
+
+##Results
