@@ -26,5 +26,5 @@ G | Games Played
 OOBP | Opponent On-Base Percentage
 OSLG | Opponent Slugging Percentage
 
-##Methods
+## Methods
 - 
