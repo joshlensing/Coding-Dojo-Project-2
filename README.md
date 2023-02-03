@@ -27,4 +27,5 @@ OOBP | Opponent On-Base Percentage
 OSLG | Opponent Slugging Percentage
 
 ## Methods
-- 
+- There are 2 columns I dropped from dataset before creating the visualizations: 'SeasonRank' and 'PlayoffRank.' These columns contained a lot of missing values because they only ranked the teams in the dataset that made the playoffs. And the ranking had no use to making the prediction of whether or not they make the playoffs, so they were dropped.
+-  For modeling the predictions, I also dropped 'OOBP' and 'OSLG' columns. About 66% of the values in those columns were also missing, as that stat had not been calculated prior to 
